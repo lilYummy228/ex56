@@ -24,13 +24,11 @@ namespace ex56
             AddStew();
         }
 
-        public List<Stew> FindOutDelay()
+        public void FindOutDelay()
         {
             var delayedStews = _stews.Where(stew => _currentYear - stew.ShelfLife > stew.ManufactureYear).ToList();
 
             ShowDelayedStews(delayedStews);
-
-            return delayedStews;
         }
 
         private void ShowDelayedStews(List<Stew> delayedStews)
