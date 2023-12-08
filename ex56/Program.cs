@@ -36,9 +36,7 @@ namespace ex56
             Console.WriteLine("Банки просроченных тушенок: ");
 
             foreach (Stew stew in delayedStews)
-            {
                 stew.ShowInfo();
-            }
         }
 
         private void AddStew()
